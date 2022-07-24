@@ -1,0 +1,83 @@
+
+/* filter tab */
+
+.filter-tab{
+    padding: 1em 0 ;
+}
+
+.filter-select{
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+
+.filter-select option {
+    max-width: 100%;
+}
+
+
+
+/* Movies section */
+.movies-section {
+    margin-bottom: 2rem;
+}
+
+.movie-box{
+    display: none !important;
+}
+
+/* titles */
+.section-title{/*
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1rem;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+*/
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    align-self: center;
+    margin: 1rem 0;
+    color: white;
+}
+
+/* override movie-box show to 4 not 8 on mobile */
+.movie-box:nth-child(-n+4){
+    display: flex !important;
+}
+
+
+@media screen and (min-width: 800px) {
+    .movies-container {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%/5, max(64px, 100%/6)), 1fr));
+    }
+
+    .movies-section {
+        padding: 0% 0%;
+    }
+
+    .movie-box:nth-child(-n+4){
+        display: flex !important;
+    }
+}
+
+@media screen and (min-width: 1150px) { 
+
+    .movie-box:nth-child(-n+5){
+        display: flex !important;
+    }
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}

@@ -1,0 +1,30 @@
+.show-more-box input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.show-more-box p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    word-wrap: break-all;
+    word-wrap: break-word;
+}
+
+.show-more-box input:focus ~ label {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.show-more-box input:checked + p {
+    -webkit-line-clamp: unset;
+}
+
+.show-more-box input:checked ~ label {
+    display: none;
+}
+
+.show-more-box label {
+    font-weight: bold;
+}

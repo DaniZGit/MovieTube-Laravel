@@ -1,0 +1,16 @@
+.profile-image-container {
+    text-align: center;
+    display: flex;  
+    flex-direction: column;
+}
+
+.user-profile-image {
+    aspect-ratio: 1;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0.15rem;
+    align-self: center;
+    margin: 0 auto;
+}
+

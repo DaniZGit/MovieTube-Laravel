@@ -1,0 +1,118 @@
+h2 {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    align-self: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.search-bar-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#movie-search-bar {
+    width: 100%;
+    text-align: center;
+    background-color: #121212;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    padding-right: 0.5rem;
+    border: 1px solid red;
+    align-self: center;
+}
+
+#movie-search-bar:focus {
+    box-shadow: none;
+    inset: none;
+    border: 1px solid #fff;
+}
+
+.genre-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.movie-genre-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.7rem;
+    padding: 0rem 0;
+    row-gap: 0.7rem;
+}
+
+.movie-genre-container .movie-genre{
+    padding: 0.7rem;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid red;
+    cursor: pointer;
+    align-self: center;
+    box-sizing: border-box;
+
+    /* make text not selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.movie-genre-container a:hover{
+    background-color: red;
+}
+
+.order-selection-container {
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+.paging-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    box-sizing: border-box;
+}
+
+.paging-section button {
+    border-radius: 100px;
+    background-color: #000;
+    border: 1px solid red;
+    color: white;
+}
+
+.paging-section button:hover {
+    background-color: red;
+}
+
+.current-page {
+    color: red;
+}
+
+@media screen and (min-width: 800px) {
+    #movie-search-bar {
+        width: 75%;
+    }
+
+    .movie-genre-container {
+        row-gap: 1rem;
+    }
+}

@@ -1,0 +1,299 @@
+h2 {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    align-self: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+/* movie details section */
+
+.movie-details-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-details-section .right {
+    display: flex;
+    flex-direction: column;
+    grid-area: details;
+}
+
+.movie-details-section .left img{
+    border: 4px solid red;
+}
+
+.movie-poster-picker:hover {
+    content: "Add Movie Poster";
+    background-color: #121212;
+    opacity: 0.5;
+}
+
+.movie-details-section .left {
+    position: relative;
+}
+
+.movie-poster-picker{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-indent: -999em;
+    outline: none;
+    cursor: pointer;
+}
+
+/* movies tags */
+
+.movie-genre-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.7rem;
+    row-gap: 0.7rem;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.movie-genre{
+    box-sizing: border-box;
+}
+
+.movie-genre {
+    padding: 0.7rem 0;
+}
+
+.movie-genre a{
+    padding: 0.7rem;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid red;
+}
+
+.movie-genre a:hover{
+    background-color: red;
+}
+
+#add-movie-genre-button a{
+    border: 3px solid red;
+    box-sizing: border-box;
+}
+
+/* movie downloads container */
+
+.movie-downloads-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.dropdown {
+    align-items: center;
+    align-content: center;
+  }
+
+.dropdown-content {
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    padding-top: 0.2rem;
+    row-gap: 0.2rem;
+ }
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 35px;
+    z-index: 500;
+    background-color: #000;
+    border: 1px solid red;
+}
+
+.dropbtn {
+    align-self: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    font-weight: bolder;
+    font-weight: 900;
+    border-radius: 35px;
+    border: 0;
+}
+
+
+.dropdown-content a:hover {
+    border-radius: 35px;
+}
+
+.movie-downloads-container:hover .dropdown-content {
+    display: flex;
+}
+
+.movie-downloads-container:hover .dropbtn {
+    background-color: #333;
+    color: #fff;
+}
+
+.dropbtn:hover {
+    cursor: default;
+}
+
+/* trailer container */
+
+.movie-trailer {
+    position: relative;
+    width: 100%;
+}
+
+.trailer-link {
+    position: absolute;
+    height: 10%;
+    top: 30%;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+    background-color: #000;
+    border: 2px solid red;
+    color: #fff;
+}
+
+.trailer-link:hover {
+    display: block;
+}
+
+.movie-trailer iframe:hover~.trailer-link{
+    filter: rgba(0,0,0,1);
+    display: block;
+}
+
+/* download links */
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.links-input-container {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.link-input {
+    width: 50%;
+    text-align: center;
+    background-color: #000;
+    border: 1px solid red;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.link-button {
+    background-color: #000;
+    border: 1px solid red;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.link-button:hover {
+    background-color: red;
+}
+
+/* add movie button */
+
+#add-movie-button {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border: 1px solid red;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 3rem;
+}
+
+#add-movie-button:hover {
+    background-color: #121212;
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-placeholder);
+    color:gray;
+}
+
+  
+/* media queries */
+
+@media screen and (min-width: 800px) {
+    .movie-details-section {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    .movie-details-section .left {
+        flex: 20%;
+    }
+
+    .movie-details-section .right {
+        flex: 50%;
+    }
+
+    .movie-details-title {
+        align-self: start;
+    }
+
+    .movie-description {
+        font-size: 1.5rem;
+    }
+
+    .movie-trailer iframe{
+        width: 100%;
+    }
+
+    .show-more-reviews-button {
+        width: 50%;
+    }
+
+    .add-new-reivew textarea {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .add-new-review-button {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .movie-trailer {
+        width: 50%;
+    }
+}
