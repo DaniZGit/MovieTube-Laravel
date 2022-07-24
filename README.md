@@ -16,11 +16,11 @@ import .sql file that is located in sql folder
 Admin can create/delete movies
 User can only review/comment on them
 
-username: admin@gmail.com
-pass:     admin
+    username: admin@gmail.com
+    pass:     admin
 
-username: zanko@gmail.com  
-pass:     zanko@gmail.com
+    username: zanko@gmail.com  
+    pass:     zanko@gmail.com
 
-username: lildickey@gmail.com
-pass:     lildickey
+    username: lildickey@gmail.com
+    pass:     lildickey
