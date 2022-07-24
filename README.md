@@ -2,6 +2,15 @@
 
 Remake of original MovieTube(html, css, js) using Laravel
 
+# Video
+
+Here is a link to 1 minute speedrun of the site: https://youtu.be/-rN-b7Xyuow
+
+# Database
+
+name: MovieTube_laravel
+import .sql file that is located in sql folder
+
 # Accounts for login
 
 Admin can create/delete movies
