@@ -6,10 +6,15 @@ Remake of original MovieTube(html, css, js) using Laravel
 
 Here is a link to 1 minute speedrun of the site: https://youtu.be/-rN-b7Xyuow
 
-# Database
+# Setup Database (MYSQL)
 
-name: MovieTube_laravel
-import movietube_laravel.sql file that is located in sql folder
+Database name: MovieTube_laravel
+<br/>
+Make sure you setup your database and add your db credentials(databaseName, username, password) to the .env.example file ...
+<br/>
+
+## Method 1
+import movietube_laravel.sql file that is located in <b>sql<b/> folder
 
 # Accounts for login
 
