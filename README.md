@@ -19,7 +19,8 @@ import movietube_laravel.sql file that is located in <b>sql<b/> folder
 # Accounts for login
 
 Admin can create/delete movies
-User can only review/comment on them
+<br/>
+Users can only review/comment on them
 
     username: admin@gmail.com
     pass:     admin
